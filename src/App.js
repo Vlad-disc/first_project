@@ -16,10 +16,4 @@ const App = () => {
   );
 }
 
-const index = () => {
-  return (
-    <Header />
-  )
-}
-
 export default App;
