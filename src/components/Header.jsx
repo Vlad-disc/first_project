@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './Header.module.css';
 
 const Header = () => {
-    return <header className='header'>
-    <img src='https://cdn-icons.flaticon.com/png/512/2205/premium/2205529.png?token=exp=1641836628~hmac=f6b496cfb75f67ed0b7968d01ef81c87' />
+    return <header className={s.header}>
+    <img src='https://cdn3.iconfinder.com/data/icons/geek-3/24/Death_Star_star_wars-256.png' />
   </header>
 }
 
