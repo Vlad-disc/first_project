@@ -1,10 +1,11 @@
 .nav {
   grid-area: n;
-  background-color: #c8dfbc;
+  background-color: #3C5F94;
+  padding: 20px;
+  width: 12vh;
 }
 
-.item {
-  color: #194357;
+.item a {
+  color: #EAE8B7;
+  text-decoration: none;
 }
-
-  
