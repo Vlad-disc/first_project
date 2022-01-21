@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import Messages from './components/Messages/Messages';
+import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/Header';
 import Navigation from './components/Navigation/Navigation';
 import Profile from './components/Profile/Profile';
@@ -20,7 +20,7 @@ const App = () => {
         <div className='app-wrapper-content'>
           <Routes>
           <Route path="/profile" element={<Profile />} />
-          <Route path="/messages" element={<Messages />} />
+          <Route path="/dialogs" element={<Dialogs />} />
           <Route path="/music" element={<Music />} />
           <Route path="/news" element={<News />} />
           <Route path="/settings" element={<Settings />} />

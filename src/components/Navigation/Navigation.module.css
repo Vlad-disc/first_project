@@ -2,10 +2,16 @@
   grid-area: n;
   background-color: #3C5F94;
   padding: 20px;
-  width: 12vh;
+  width: 13vh;
 }
 
 .item a {
   color: #EAE8B7;
   text-decoration: none;
+}
+
+.item img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
 }
