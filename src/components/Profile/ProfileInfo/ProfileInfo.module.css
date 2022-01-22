@@ -1,0 +1,10 @@
+.item {
+    color: #EAE8B7;
+    padding-left: 10px;
+}
+
+.container img {
+    width: 600px;
+    border: white solid 4px;
+    border-radius: 20px;
+}

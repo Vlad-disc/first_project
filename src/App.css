@@ -8,11 +8,12 @@
   "n c";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 1fr 15fr;
-  grid-gap: 8px;
+  /* grid-gap: 8px; */
 }
 
 .app-wrapper-content {
     grid-area: c;
     background-color: #3C5F94;
     width: 85vh;
+    padding: 5px;
 }
