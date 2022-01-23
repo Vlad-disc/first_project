@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Navigation.module.css'
 
-const activeLink = ({ isActive }) => ({ color: isActive ? "#f52f41" : "" });
+const activeLink = ({ isActive }) => ({ color: isActive ? "#832129" : "" });
 
 
 const Navigation = () => {
