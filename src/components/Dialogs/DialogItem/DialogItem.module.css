@@ -2,3 +2,10 @@
     text-decoration: none;
     color: #eae8b7;
 }
+
+
+img {
+    width: 40px;
+    padding-top: 5px;
+    padding-right: 2px;
+}

@@ -2,7 +2,11 @@
   grid-area: n;
   background-color: #3C5F94;
   padding: 20px;
-  width: 13vh;
+  width: 15vh;
+}
+
+.item {
+  padding: 2px;
 }
 
 .item a {
@@ -11,7 +15,7 @@
 }
 
 .item img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
 }
