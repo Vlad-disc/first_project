@@ -1,6 +1,10 @@
 .message {
     display: flex;
-    
-    padding-left: 5px;
+    flex-direction: column;
+    border: solid 3px #eae8b7;
+    margin-left: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 8px;
 }
 

@@ -2,7 +2,15 @@
   grid-area: n;
   background-color: #3C5F94;
   padding: 20px;
-  width: 15vh;
+  width: 18vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav img {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
 }
 
 .item {
@@ -14,8 +22,27 @@
   text-decoration: none;
 }
 
-.item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+
+.itemF {
+  padding: 2px;
+  padding-top: 60px;
 }
+
+.itemF a{
+  color: #EAE8B7;
+  text-decoration: none;
+}
+
+.friends {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.friends img {
+  padding-top: 8px;
+  width: 40px;
+  height: 40px;
+}
+

@@ -1,0 +1,19 @@
+.bestFriendItem {
+    display: flex;
+    border: solid 2px rgb(100, 63, 48);
+    border-radius: 20px;
+    margin-top: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bestFriendItem a {
+    color: #eae8b7;
+    text-decoration: none;
+}
+
+
+.bestFriendItem img {
+    width: 40px;
+    height: 40px;
+}
