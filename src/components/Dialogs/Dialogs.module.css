@@ -3,6 +3,10 @@
     grid-template-columns: 4fr 10fr;
 }
 
+.messages {
+    width: 80%;
+}
+
 .addMessage textarea {
     resize: none;
     border-radius: 10px;
@@ -20,7 +24,7 @@
     border-radius: 10px;
     width: 100px;
     height: 40px;
-    margin-left: 420px;
+    margin-left: 320px;
     border: solid 2px #cecece;
     background-color: #ffffff;
 }
