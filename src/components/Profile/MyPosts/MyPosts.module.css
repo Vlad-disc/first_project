@@ -6,3 +6,24 @@
 .posts {
     padding-top: 5px;
 }
+
+.addText textarea {
+    resize: none;
+    border-radius: 10px;
+    width: 60%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: solid 2px #cecece;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.addText button {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 335px;
+    border: solid 2px #cecece;
+    background-color: #ffffff;
+}
