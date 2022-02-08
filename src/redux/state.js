@@ -1,4 +1,6 @@
-import { renderEntireTree } from '../render'
+let renderEntireTree = () => {
+  console.log("there's state")
+}
 
 let state = {
   profilePage: {
@@ -15,11 +17,11 @@ let state = {
 
   messagesPage: {
     dialogs: [
-      { id: 1, name: "Sasha", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140048.png?token=exp=1643276362~hmac=17fdefdcc7984a005d0d78272f9208e4"},
-      { id: 2, name: "Lera", img: "https://cdn-icons.flaticon.com/png/512/4139/premium/4139997.png?token=exp=1643276380~hmac=104be65cabc7bbccba94affc97e59ea4" },
-      { id: 3, name: "Lenka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140053.png?token=exp=1643276376~hmac=2f11cdf6adcee39f6047c2078e680ad6"},
-      { id: 4, name: "Mishka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140077.png?token=exp=1643276369~hmac=7a137c418096cea5fe6c8206bb9e192d"},
-      { id: 5, name: "Romka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140057.png?token=exp=1643276336~hmac=c367d25ac895b5eb0cf8c1b795f5d70e"}
+      { id: 1, name: "Sasha", img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"},
+      { id: 2, name: "Lera", img: "https://cdn-icons-png.flaticon.com/512/2922/2922591.png" },
+      { id: 3, name: "Lenka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922591.png"},
+      { id: 4, name: "Mishka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"},
+      { id: 5, name: "Romka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"}
     ],
 
     messages: [
@@ -34,11 +36,11 @@ let state = {
 
   friendsPage: {
     bestFriend: [
-      { id: 1, name: "Sasha", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140048.png?token=exp=1643276362~hmac=17fdefdcc7984a005d0d78272f9208e4"},
-      { id: 2, name: "Lera", img: "https://cdn-icons.flaticon.com/png/512/4139/premium/4139997.png?token=exp=1643276380~hmac=104be65cabc7bbccba94affc97e59ea4" },
-      { id: 3, name: "Lenka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140053.png?token=exp=1643276376~hmac=2f11cdf6adcee39f6047c2078e680ad6"},
-      { id: 4, name: "Mishka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140077.png?token=exp=1643276369~hmac=7a137c418096cea5fe6c8206bb9e192d"},
-      { id: 5, name: "Romka", img: "https://cdn-icons.flaticon.com/png/512/4140/premium/4140057.png?token=exp=1643276336~hmac=c367d25ac895b5eb0cf8c1b795f5d70e"}
+      { id: 1, name: "Sasha",img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"},
+      { id: 2, name: "Lera", img: "https://cdn-icons-png.flaticon.com/512/2922/2922591.png"},
+      { id: 3, name: "Lenka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922591.png"},
+      { id: 4, name: "Mishka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"},
+      { id: 5, name: "Romka", img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png"}
     ]
   }
   
@@ -46,7 +48,7 @@ let state = {
 
 window.state = state;
 
-export let addPost = () => {
+export const addPost = () => {
   let newPost = {
     id:5,
     message: state.profilePage.newPostText,
@@ -58,12 +60,12 @@ export let addPost = () => {
   renderEntireTree(state);
 };
 
-export let updatePostText = (newText) => {
+export const updatePostText = (newText) => {
   state.profilePage.newPostText = newText;
   renderEntireTree(state);
 };
 
-export let addMessage = () => {
+export const addMessage = () => {
   let newMessage = {
     id:5,
     message: state.messagesPage.newMessageText
@@ -74,10 +76,14 @@ export let addMessage = () => {
   renderEntireTree(state);
 };
 
-export let updateMessageText = (newText) => {
+export const updateMessageText = (newText) => {
   state.messagesPage.newMessageText = newText;
   renderEntireTree(state);
 };
+
+export const subscribe=(observer) => {
+  renderEntireTree = observer;
+}
 
 
 

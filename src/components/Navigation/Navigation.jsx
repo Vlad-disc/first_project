@@ -50,9 +50,9 @@ const Navigation = (props) => {
           Friends
         </NavLink>
         <div className={s.friends}>
-          <img src='https://cdn-icons.flaticon.com/png/512/4140/premium/4140048.png?token=exp=1643276362~hmac=17fdefdcc7984a005d0d78272f9208e4' />
-          <img src='https://cdn-icons.flaticon.com/png/512/4139/premium/4139997.png?token=exp=1643276380~hmac=104be65cabc7bbccba94affc97e59ea4' />
-          <img src='https://cdn-icons.flaticon.com/png/512/4140/premium/4140057.png?token=exp=1643276336~hmac=c367d25ac895b5eb0cf8c1b795f5d70e' />
+          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922693.png' />
+          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922572.png' />
+          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922591.png' />
         </div>
       </div>
     </nav>

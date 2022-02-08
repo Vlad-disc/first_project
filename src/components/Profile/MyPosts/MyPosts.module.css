@@ -17,11 +17,9 @@
     border: solid 2px #cecece;
     background-color: #ffffff;
     font-size: 15px;
-    font-family: sans-serif;
 }
 
 .addText button {
-    font-family: sans-serif;
     border-radius: 10px;
     width: 100px;
     height: 40px;
