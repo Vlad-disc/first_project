@@ -44,51 +44,52 @@ let store = {
     
   },
   
+  _renderEntireTree() {
+    console.log("there's state")
+  },
+
   getState() {
     return this._state;
   },
 
-  _renderEntireTree() {
-    console.log("there's state")
-  },
-  
-  addPost() {
-    let newPost = {
-      id:5,
-      message: this._state.profilePage.newPostText,
-      likesCount: 1
-    };
-  
-    this._state.profilePage.posts.push(newPost);
-    this._state.profilePage.newPostText = '';
-    this._renderEntireTree(this._state);
-  },
-  
-  updatePostText (newText) {
-    this._state.profilePage.newPostText = newText;
-    this._renderEntireTree(this._state);
-  },
-  
-  addMessage() {
-    let newMessage = {
-      id:5,
-      message: this._state.messagesPage.newMessageText
-    };
-  
-    this._state.messagesPage.messages.push(newMessage);
-    this._state.messagesPage.newMessageText = '';
-    this._renderEntireTree(this._state);
-  },
-  
-  updateMessageText(newText) {
-    this._state.messagesPage.newMessageText = newText;
-    this._renderEntireTree(this._state);
-  },
-  
   subscribe(observer) {
     this._renderEntireTree = observer;
-  }
+  },
+
+  dispatch(action) {
+    if (action.type === 'ADD-POST') {
+      let newPost = {
+       id:5,
+       message: this._state.profilePage.newPostText,
+       likesCount: 1
+      };
   
+      this._state.profilePage.posts.push(newPost);
+      this._state.profilePage.newPostText = '';
+      this._renderEntireTree(this._state);
+
+
+    } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+      this._state.profilePage.newPostText = action.newText;
+      this._renderEntireTree(this._state);
+
+
+    } else if (action.type === 'ADD-MESSAGE') {
+      let newMessage = {
+      id:5,
+      message: this._state.messagesPage.newMessageText
+      };
+  
+      this._state.messagesPage.messages.push(newMessage);
+      this._state.messagesPage.newMessageText = '';
+      this._renderEntireTree(this._state);
+
+
+    } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT') {
+      this._state.messagesPage.newMessageText = action.newText;
+      this._renderEntireTree(this._state);
+    }
+  }
   
 }
 window.store = store;

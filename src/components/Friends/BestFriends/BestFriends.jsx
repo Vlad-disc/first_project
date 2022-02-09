@@ -10,7 +10,7 @@ const BestFriends = (props) => {
     return (
         <div className={s.bestFriendItem}>
             <NavLink to={path} style={activeDialog}>
-                <img src={props.img} />
+                <img src={props.img} alt="Avatar"/>
                 {props.name}
             </NavLink>
         </div>

@@ -6,6 +6,9 @@
 
 .dialogItem img {
     width: 40px;
-    padding-top: 5px;
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
     padding-right: 2px;
 }

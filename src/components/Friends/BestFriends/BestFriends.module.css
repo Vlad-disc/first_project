@@ -16,5 +16,7 @@
 
 .bestFriendItem img {
     width: 40px;
+    vertical-align: middle;
     height: 40px;
+    border-radius: 50%;
 }
