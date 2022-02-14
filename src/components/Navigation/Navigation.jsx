@@ -51,9 +51,11 @@ const Navigation = (props) => {
         </NavLink>
         
         <div className={s.friends}>
-          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922693.png' />
-          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922572.png' />
-          <img src='https://cdn-icons-png.flaticon.com/512/2922/2922591.png' />
+          <NavLink to='/friends' style={activeLink}>
+            <img src='https://cdn-icons-png.flaticon.com/512/2922/2922693.png' />
+            <img src='https://cdn-icons-png.flaticon.com/512/2922/2922572.png' />
+            <img src='https://cdn-icons-png.flaticon.com/512/2922/2922591.png' />
+          </NavLink>
         </div>
       </div>
     </nav>
